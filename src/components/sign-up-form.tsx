@@ -15,7 +15,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -25,7 +24,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import SetPasswordInput from "./set-password-input";
-import { DatePicker } from "react-aria-components";
 import DatePickerInput from "./date-picker-input";
 import PhoneNumberInput from "./phone-number-input";
 
@@ -70,7 +68,6 @@ export function SignUpForm({
       });
       if (error) throw error;
       if (data?.user) {
-        const user_id = data.user.id;
         // Populate the Students table
         const { data: studentData, error: studentError } = await supabase
           .from("Students")
@@ -93,6 +90,7 @@ export function SignUpForm({
           ]);
         if (studentError) throw studentError;
         console.log(studentError);
+        console.log(studentData);
       }
 
       router.push("/auth/sign-up-success");

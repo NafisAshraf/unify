@@ -25,17 +25,13 @@ import {
   ChevronRightIcon,
   ChevronUpIcon,
   CircleAlertIcon,
-  CircleCheckIcon,
   CircleXIcon,
   Columns3Icon,
   EllipsisIcon,
-  FilterIcon,
-  ListFilterIcon,
   PlusIcon,
   RefreshCcwIcon,
   SearchIcon,
   TrashIcon,
-  XIcon,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -50,7 +46,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -76,11 +71,6 @@ import {
   PaginationItem,
 } from "@/components/ui/pagination";
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import {
   Select,
   SelectContent,
   SelectItem,
@@ -97,20 +87,10 @@ import {
 } from "@/components/ui/table";
 import { createClient } from "@/lib/supabase/client";
 
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-import TableComponent from "@/components/table";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { AddStudentSheet } from "@/components/add-student-sheet";
 
-import { toast, Toaster } from "sonner";
+import { toast } from "sonner";
 import { EditStudentSheet } from "@/components/edit-student-sheet";
 
 export default function Component() {

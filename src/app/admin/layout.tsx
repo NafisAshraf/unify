@@ -15,7 +15,6 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar";
 import CurrentPage from "@/components/current-page";
-import { BookOpen, GraduationCap, LayoutDashboard, Users } from "lucide-react";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 
 // This is sample data.

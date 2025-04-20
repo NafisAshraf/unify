@@ -9,27 +9,17 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import SetPasswordInput from "./set-password-input";
-import { DatePicker } from "react-aria-components";
+
 import DatePickerInput from "./date-picker-input";
 import PhoneNumberInput from "./phone-number-input";
-import {
-  SheetClose,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-} from "./ui/sheet";
-import { CircleCheckIcon, XIcon } from "lucide-react";
+import { SheetDescription, SheetHeader, SheetTitle } from "./ui/sheet";
 import { toast } from "sonner";
 
 type AddStudentSheetProps = React.ComponentPropsWithoutRef<"div"> & {
