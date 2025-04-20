@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import DatePickerInput from "./date-picker-input";
 import PhoneNumberInput from "./phone-number-input";
@@ -40,10 +39,8 @@ export function EditStudentSheet({
   );
   const [phoneNumber, setPhoneNumber] = useState(row.original.phone_number);
   const [email, setEmail] = useState(row.original.email);
-  const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
   //   const [studentData, setStudentData] = useState<any>(null);
   let studentData: any;
 

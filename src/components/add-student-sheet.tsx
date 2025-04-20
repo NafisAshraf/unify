@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import DatePickerInput from "./date-picker-input";
@@ -37,10 +36,8 @@ export function AddStudentSheet({
   const [dateOfBirth, setDateOfBirth] = useState(new Date());
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const router = useRouter();
   //   const [studentData, setStudentData] = useState<any>(null);
   let studentData: any;
 
